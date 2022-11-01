@@ -71,11 +71,19 @@ export class App extends Component {
         <h1>Phonebook</h1>
         <ContactForm handleSubmit={this.handleSubmit} />
         <h2> Contacts</h2>
-        <Filter filter={filter} handleChange={this.handleChange} />
-        <ContactList
-          contacts={this.getFilteredContacts()}
-          handleDelete={this.handleDelete}
-        />
+        <div
+          style={{
+            boxShadow: '0px 0px 6px 5px rgba(128, 187, 236, 0.75)',
+            borderRadius: '4px',
+            padding: '20px',
+          }}
+        >
+          <Filter filter={filter} handleChange={this.handleChange} />
+          <ContactList
+            contacts={this.getFilteredContacts()}
+            handleDelete={this.handleDelete}
+          />
+        </div>
       </div>
     );
   }
