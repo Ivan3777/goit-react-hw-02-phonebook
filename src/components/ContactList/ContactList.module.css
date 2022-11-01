@@ -22,3 +22,7 @@
     background-color: #1d7ecd;
     cursor: pointer;
   }
+
+  .contactListItem {
+    list-style: none;
+  }
